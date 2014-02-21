@@ -5,16 +5,20 @@ gem 'mysql2'
 
 group :assets do
   gem 'compass-rails'
-  gem 'sass-rails'
+  # gem 'sass-rails'
   gem 'coffee-rails'
-  gem 'haml-rails'
   gem 'uglifier'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', platforms: :ruby
   gem 'angularjs-rails'
-  gem 'twitter-bootstrap-rails'
-  gem 'turbolinks'
 end
+
+# doesn't work if put it to the assets group
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'turbolinks'
+gem 'haml'
+gem 'jquery-rails'
 
 group :development do
   gem 'unicorn'
